@@ -106,6 +106,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.1-x64-mingw32)
       racc (~> 1.4)
+    optimist (3.0.1)
     public_suffix (4.0.6)
     puma (4.3.7)
       nio4r (~> 2.0)
@@ -215,6 +216,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  optimist
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)

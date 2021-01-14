@@ -1,0 +1,19 @@
+<h1>All Shopping Lists</h1>
+
+<ul>
+  <% @shoppingLists.each do |shoppingList| %>
+    <li>
+      <a href="<%= shopping_list_path(shoppingList) %>">
+        <%= shoppingList.title %>
+      </a>
+      <%= link_to "Edit", edit_shopping_list_path(shoppingList) %>
+      <%= link_to "Destroy", shopping_list_path(shoppingList),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %>
+
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "New Shopping List", new_shopping_list_path %>

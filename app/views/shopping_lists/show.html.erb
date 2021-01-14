@@ -1,0 +1,6 @@
+<h1><%= @shoppingList.title %></h1>
+<h2><%= @shoppingList.created_at %></h2>
+<a href="<%= root_path %>">Back</a>
+<%= link_to "Destroy", shopping_list_path(@shoppingList),
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>

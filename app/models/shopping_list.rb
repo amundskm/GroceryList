@@ -1,0 +1,4 @@
+class ShoppingList < ApplicationRecord
+
+
+end
